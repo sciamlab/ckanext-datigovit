@@ -2,10 +2,10 @@ CKAN TRANSLATIONS
 ====================
 
 here the source .po and compiled .mo files with the corrected translations
-for the supported languages in the Expo2015 extension
+for the supported languages in the DatiGovIt extension
 
 the translation strings provided here include those of the ckanext-spatial and 
-ckanext-expo2015 extensions plugins
+ckanext-datigovit extensions plugins
 
 Installation
 -------------
