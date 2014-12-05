@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/datigovit/__init__.py
+ckanext/datigovit/plugin.py
+ckanext_datigovit.egg-info/PKG-INFO
+ckanext_datigovit.egg-info/SOURCES.txt
+ckanext_datigovit.egg-info/dependency_links.txt
+ckanext_datigovit.egg-info/entry_points.txt
+ckanext_datigovit.egg-info/namespace_packages.txt
+ckanext_datigovit.egg-info/not-zip-safe
+ckanext_datigovit.egg-info/top_level.txt
