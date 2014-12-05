@@ -1,4 +1,4 @@
-Open Expo 2015 plugins for CKAN
+dati.gov.it plugins for CKAN
 ===================================================
 
 This extension contains plugins for:

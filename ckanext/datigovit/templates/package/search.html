@@ -47,11 +47,7 @@
 {% endblock %}
 
 {% block secondary_content %}
-<<<<<<< HEAD
   {% snippet "spatial/snippets/spatial_query.html", default_extent=[[36.5,6.2], [47.5,18.9]] %}
-=======
-  {% snippet "spatial/snippets/spatial_query.html", default_extent=[[6.2,36.5], [18.9,47.5]] %}
->>>>>>> 95807bf98d221fe5a3dd649e50c9405f282a33d6
   {% for facet in c.facet_titles %}
     {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
   {% endfor %}

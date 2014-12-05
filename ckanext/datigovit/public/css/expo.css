@@ -128,7 +128,7 @@ ul.menu li { margin: 0px; }
 h1#site-name { margin: 0px; }
 #site-name a { font-weight: normal; }
 #site-slogan { font-size: 0.929em; margin-top: 7px; word-spacing: 0.1em; font-style: italic; }
-#main-menu { clear: both; top: -10px; position: relative; }
+#main-menu { clear: both;  position: relative; padding-top: 5px;}
 #main-menu-links { font-size: 0.929em; margin: 0px; padding: 0px 15px; }
 #main-menu-links li { float: left; list-style: none outside none; padding: 0px 1px; margin: 0px 1px; }
 #main-menu-links a { color: rgb(51, 51, 51); background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.7); float: left; height: 2.4em; line-height: 2.4em; padding: 0px 0.8em; text-decoration: none; text-shadow: 0px 1px rgb(238, 238, 238); border-top-left-radius: 8px; border-top-right-radius: 8px; }
@@ -136,7 +136,8 @@ h1#site-name { margin: 0px; }
 #main-menu-links a:active { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
 #main-menu-links li a.active { border-bottom: medium none; }
 #main { margin-top: 20px; margin-bottom: 40px; }
-.content { margin-top: 10px; }
+.content {/* margin-top: 10px;*/ }
+.region-header .block{margin: 0 10px;}
 #content h2 { margin-bottom: 2px; font-size: 1.429em; line-height: 1.4; }
 ul.links { color: rgb(104, 105, 107); font-size: 0.821em; }
 #footer-wrapper { color: rgba(255, 255, 255, 0.65); font-size: 0.857em; }
@@ -155,10 +156,10 @@ ul.links { color: rgb(104, 105, 107); font-size: 0.821em; }
 
 body, body.overlay { color: rgb(0, 0, 0); }
 #page, #main-wrapper, #main-menu-links li a.active, #main-menu-links li.active-trail a { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
-#header { background-color: rgb(255, 255, 255); background-image: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%); }
-a { color: rgb(204, 37, 117); }
-a:hover, a:focus { color: rgb(204, 37, 117); }
-a:active { color: rgb(204, 37, 117); }
+#header { width: 960px; margin: 5px auto auto; background-image: url('http://www.dati.gov.it/sites/all/themes/datigovit/images/gradient.png'); background-repeat: repeat-x; }
+a { color: rgb(149,55,53); }
+a:hover, a:focus { color: rgb(149,55,53); }
+a:active { color: rgb(149,55,53); }
 #page-wrapper, #footer-wrapper { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
 .region-header, .region-header a, .region-header li a.active, #name-and-slogan, #name-and-slogan a, #secondary-menu-links li a { color: rgb(0, 0, 0); }
 /* ::::: http://89.97.56.42/sites/all/themes/datigovit/css/datigovit.css?nb9m4n ::::: */
@@ -167,11 +168,12 @@ body { font-family: Lato,arial,verdana,tahoma; }
 #header { width: 960px; margin: 5px auto auto; }
 #name-and-slogan { margin: 0px; }
 #logo { padding: 5px; }
-#main-menu-links { margin: 0px; padding: 0px; }
+.region-header {float: right;}
+#main-menu-links { margin: 0px; padding: 0px; padding-bottom: 10px;}
 #main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; }
 #main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; margin: 0px; padding-right: 2px; }
 #main-menu-links li.last { background-image: none; }
-#main-menu-links li a { color: rgb(204, 37, 117); font-size: 16px; font-weight: bold; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px 7px; }
+#main-menu-links li a { color: rgb(149, 55, 53); font-size: 16px; font-weight: bold; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px 7px; }
 #main-menu-links li a:link, #main-menu-links li a:hover, #main-menu-links li a:visited { background-color: rgb(255, 255, 255); }
 div.stile-slider { width: 440px; margin: 0px 50px; }
 div.stile-slider img { float: left; margin: 10px; border-right: thick none rgb(255, 0, 0); }
@@ -188,7 +190,7 @@ div.clearer { clear: left; }
 .box-bordo-grigio { border: 1px solid rgb(221, 221, 221); border-radius: 10px; min-height: 200px; }
 .box-bordo-grigio .pane-content { padding: 3px; }
 .box-seconda-fila { border: 1px solid rgb(204, 204, 204); background-color: rgb(239, 243, 243); font-size: 14px; width: 220px; min-height: 220px; position: relative; margin-top: 30px; }
-.box-seconda-fila h2 { margin: 0px; color: rgb(204, 37, 117); padding: 0px 5px; }
+.box-seconda-fila h2 { margin: 0px; color: rgb(149,55,53); padding: 0px 5px; }
 .box-seconda-fila .field { padding: 0px 5px; }
 .box-seconda-fila img { margin-right: auto; margin-left: auto; }
 #content .box-seconda-fila h2 { font-size: 18px; }
@@ -213,12 +215,12 @@ div.clearer { clear: left; }
 .block ol, .block ul { margin: 0px; padding: 5px 0px 0.25em 1em; }
 .quicktabs-style-datagovit div.view-content { padding: 0px 20px; line-height: 14px; margin: 15px 0px; }
 .quicktabs-style-datagovit div.view-content div { margin-bottom: 4px; }
-.quicktabs-style-datagovit div.view-footer a { color: rgb(204, 37, 117); font-size: 11px; font-weight: bold; }
+.quicktabs-style-datagovit div.view-footer a { color: rgb(149,55,53); font-size: 11px; font-weight: bold; }
 .quicktabs_main.quicktabs-style-datagovit { clear: both; }
 .quicktabs_main.quicktabs-style-datagovit a { color: rgb(0, 0, 0); font-size: 12px; }
 ul.quicktabs-tabs.quicktabs-style-datagovit { text-transform: lowercase; font-size: 14px; font-weight: bold; padding: 0px; margin: 0px; }
 ul.quicktabs-tabs.quicktabs-style-datagovit a {  }
-ul.quicktabs-tabs.quicktabs-style-datagovit li.active a, ul.quicktabs-tabs.quicktabs-style-datagovit li a:hover { color: rgb(204, 37, 117); }
+ul.quicktabs-tabs.quicktabs-style-datagovit li.active a, ul.quicktabs-tabs.quicktabs-style-datagovit li a:hover { color: rgb(149,55,53); }
 .condividi-su .social-share { float: right; padding-top: 15px; }
 .field-name-link-dataset-immagine img { display: block; margin-left: auto; margin-right: auto; }
 #id-mappe { background: url('mappa_0.png') no-repeat scroll 0px 0px transparent; }
@@ -231,11 +233,16 @@ ul.quicktabs-tabs.quicktabs-style-datagovit li.active a, ul.quicktabs-tabs.quick
 }
 
 .wrapper {
-  border: none;
+ /* border: none;*/
   box-shadow: none;
+border-radius: 0px;
 }
 
 .modal {
   margin-left: -455px;
   width: 960px;
+}
+.dataset-map-expanded #dataset-map {
+  width: 938px ! important;
+  padding-bottom: 10px !important;
 }
