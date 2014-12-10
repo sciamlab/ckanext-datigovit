@@ -43,9 +43,6 @@ Example:
       {% if notes %}
         <div>{{ notes|urlize }}</div>
       {% endif %}
-      {% if version %}
-      <span class="version" style="font-size: 10px">{{ _('Version') }} {{ version }}</span>
-      {% endif %}
     </div>
     {% if package.resources and not hide_resources %}
       <ul class="dataset-resources unstyled">

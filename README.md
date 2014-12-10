@@ -2,15 +2,15 @@ dati.gov.it plugins for CKAN
 ===================================================
 
 This extension contains plugins for:
-* Open Expo 2015 theme
-* Open Expo 2015 CKAN customization
+* [dati.gov.it](http://dati.gov.it) theme
+* [dati.gov.it](http://dati.gov.it) CKAN customization
 * add extra capabilities to [CKAN](http://ckan.org)
 
 License
 -------
 Licensed under the GNU Affero General Public License (AGPL) v3.0
 
-    Open Expo 2015 CKAN plugin
+    dati.gov.it CKAN plugin
     Copyright (C) 2014 by Sciamlab s.r.l.
 
     This program is free software: you can redistribute it and/or modify
