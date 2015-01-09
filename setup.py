@@ -11,9 +11,9 @@ setup(
     ''',
     classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     keywords='',
-    author='sciamlab',
+    author='SciamLab',
     author_email='info@sciamlab.com',
-    url='www.sciamlab.com',
+    url='https://github.com/sciamlab/ckanext-datigovit',
     license='',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     namespace_packages=['ckanext', 'ckanext.datigovit'],
