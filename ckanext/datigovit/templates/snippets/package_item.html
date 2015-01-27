@@ -22,6 +22,12 @@ Example:
 <li class="{{ item_class or "dataset-item" }}">
   {% block package_item_content %}
     <div class="dataset-content">
+	{#% for extra in package.extras %#}
+                {% if package.organization %}
+                  <div><strong>{{package.organization.title}}</strong></div>
+                {% endif %}
+        {#% endfor %#}
+
       <h3 class="dataset-heading">
         {% if package.private %}
           <span class="dataset-private label label-inverse">
@@ -36,6 +42,7 @@ Example:
           <span class="label label-important">{{ _('Deleted') }}</span>
         {% endif %}
         {{ h.popular('recent views', package.tracking_summary.recent, min=10) if package.tracking_summary }}
+	 <span class="label label-info">{{ package.tracking_summary.total }} visite</span>
       </h3>
       {% if banner %}
         <span class="banner">{{ _('Popular') }}</span>

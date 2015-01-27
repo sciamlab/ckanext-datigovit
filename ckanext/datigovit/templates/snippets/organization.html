@@ -1,3 +1,4 @@
+
 {#
 Embeds a organization within the sidebar of a page.
 
@@ -14,11 +15,10 @@ Example:
 
 #}
 
-{# % with truncate=truncate or 0, url=h.url_for(controller='organization', action='read', id=organization.name) %i #}
+{# % with truncate=truncate or 0, url=h.url_for(controller='organization', action='read', id=organization.name) % #}
 {% set truncate = truncate or 0 %}
 {% set url = h.url_for(controller='organization', action='read', id=organization.name) %}
-{% set imgurl = organization.image_url %}
-
+  {% block info %}
   <div class="module module-narrow module-shallow context-info">
     {% if has_context_title %}
       <h2 class="module-heading"><i class="icon-building"></i> {{ _('Organization') }}</h2>
@@ -27,11 +27,7 @@ Example:
       {% block image %}
         <div class="image">
           <a href="{{ url }}">
-            {% if imgurl and not imgurl.startswith('http') %}
-              <img src="{{ h.url_for_static('uploads/group/%s' % imgurl, qualified = True) }}" width="200" alt="{{ organization.name }}" />
-	    {% else %}
-              <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" width="200" alt="{{ organization.name }}" />
-            {% endif %}
+            <img src="{{ organization.image_url or h.url_for_static('/base/images/placeholder-organization.png') }}" width="200" alt="{{ organization.name }}" />
           </a>
         </div>
       {% endblock %}
@@ -61,4 +57,6 @@ Example:
       {% endif %}
     </section>
   </div>
+  {% endblock %} 
 {# % endwith % #}
+
